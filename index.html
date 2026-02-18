@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio website" />
+  <title>Portfolio | KIM JEONGHWAN</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body id="top">
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Go to top">
+        <span class="brand__mark" aria-hidden="true">▣</span>
+        <span class="brand__text">
+          <span class="brand__name">KIM JEONGHWAN/キム ジョンファン</span>
+          <span class="brand__role">Front-end Engineer</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#works">Works</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#process">Process</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="hero__kicker">PORTFOLIO</p>
+      <h1 class="hero__title">ユーザー視点で設計し、丁寧に実装するフロントエンド</h1>
+      <p class="hero__subtitle">
+        情報設計と導線を意識し、見やすさ・使いやすさを両立したUIを制作します。
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#works">作品を見る</a>
+        <!-- <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> -->
+      </div>
+
+      <div class="hero__badges" aria-label="Stack badges">
+        <!-- ✅ 필요 없으면 지우거나 내용 변경 -->
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">UI Design</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="works">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">私の作品</h2>
+        <p class="section__lead">
+          カードをクリックすると詳細ページに移動します。
+        </p>
+      </div>
+
+      <div class="works">
+        <a class="work-card work-card--link" href="./works/project-1.html" aria-label="Go to project detail: Project 1">
+          <div class="work-card__thumb" role="img" aria-label="Project thumbnail"
+            style="background-image:url(img/screen1.png);">
+          </div>
+          <div class="work-card__body">
+            <h3 class="work-card__title">焼菓子専門店焼菓子３＆１<Br>オンラインショップ制作</h3>
+            <p class="work-card__desc">産学連携授業で取り組んだ、焼菓子専門店のオンラインショップ制作。</p>
+
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span
+                class="tag">REACT</span>
+            </div>
+
+            <div class="work-card__links">
+              <span class="link">Detail →</span>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- <a class="work-card work-card--link" href="./works/project-2.html" aria-label="Go to project detail: Project 2">
+          <div class="work-card__thumb" role="img" aria-label="Project thumbnail">
+          </div>
+          <div class="work-card__body">
+            <h3 class="work-card__title">Project 2 — Brand Site</h3>
+            <p class="work-card__desc">작품 설명(한 줄). 구현 포인트를 넣어도 좋아요.</p>
+            <div class="tags">
+              <span class="tag">Responsive</span><span class="tag">Animation</span><span class="tag">UI</span>
+            </div>
+            <div class="work-card__links">
+              <span class="link">Detail →</span>
+            </div>
+          </div>
+        </a>
+
+    
+        <a class="work-card work-card--link" href="./works/project-3.html" aria-label="Go to project detail: Project 3">
+          <div class="work-card__thumb" role="img" aria-label="Project thumbnail">
+          </div>
+          <div class="work-card__body">
+            <h3 class="work-card__title">Project 3 — App</h3>
+            <p class="work-card__desc">작품 설명(한 줄). 타겟/콘텐츠 구조 강조.</p>
+            <div class="tags">
+              <span class="tag">Design</span><span class="tag">Layout</span><span class="tag">SEO</span>
+            </div>
+            <div class="work-card__links">
+              <span class="link">Detail →</span>
+            </div>
+          </div>
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">About</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__card">
+          <h3 class="about__title">Profile</h3>
+          <p class="about__text">
+            人の役に立つことを、Webという形で実現することを大切にしています。<br>
+            相手の立場や背景を想像し、「誰にとって、どのように使われるか」を軸に設計・実装してきました。
+            見た目だけでなく、分かりやすさ・使いやすさを重視し、目的に合ったUIを丁寧に作り込むことが強みです。<br><br>
+            一方で細部にこだわりすぎる傾向があるため、現在は優先順位と期限を明確にし、必要に応じてチームに相談しながら進めることで改善しています。<br><br>
+            入社後は指示を待つのではなく、自ら課題を見つけて改善提案・実行を行い、ユーザーとチーム双方に価値ある成果を届けたいと考えています。
+          </p>
+        </div>
+
+        <div class="about__card about__card--soft">
+          <h3 class="about__title">私の強み</h3>
+
+
+          <div class="strengths" aria-label="Strength points">
+            <article class="strength reveal" style="--d:0ms">
+              <h4 class="strength__title"><span>01</span>&nbsp; 設計から考える力</h4>
+              <p class="strength__desc">
+                産学連携プロジェクトでは、ブランドページとショップ機能を分離した構成を設計。
+                ユーザー導線と情報整理を意識したサイト設計を行いました。
+              </p>
+            </article>
+
+            <article class="strength reveal" style="--d:120ms">
+              <h4 class="strength__title"><span>02</span>&nbsp; 技術への挑戦力</h4>
+              <p class="strength__desc">
+                授業後期からReactに挑戦。
+                慣れない技術でも調べ、改善を繰り返しながら実装力を高めました。
+              </p>
+            </article>
+
+            <article class="strength reveal" style="--d:240ms">
+              <h4 class="strength__title"><span>03</span>&nbsp; チームを支えるリーダーシップ</h4>
+              <p class="strength__desc">
+                進級制作ではチームリーダーを担当。
+                スケジュール管理や役割分担を行い、最優秀賞を受賞しました。
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">使用スキル</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skill reveal" style="--d:0ms">
+          <div class="skill__label">HTML / CSS</div>
+          <div class="skill__sub">レスポンシブ対応・レイアウト調整・UIのスタイリング</div>
+        </div>
+
+        <div class="skill reveal" style="--d:120ms">
+          <div class="skill__label">JavaScript</div>
+          <div class="skill__sub">DOM操作・イベント処理・基本的なインタラクション実装</div>
+        </div>
+
+        <div class="skill reveal" style="--d:240ms">
+          <div class="skill__label">React</div>
+          <div class="skill__sub">コンポーネント分割・状態管理（基礎）・React Router（使用経験）</div>
+        </div>
+
+        <div class="skill reveal" style="--d:360ms">
+          <div class="skill__label">Figma</div>
+          <div class="skill__sub">ワイヤーフレーム・UI設計・デザイン整理</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="process">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">制作の流れ</h2>
+      </div>
+
+      <ol class="process">
+        <li class="step reveal" style="--d:0ms">
+          <div class="step__body">
+            <h3 class="step__title">企画</h3>
+            <p class="step__desc">要件整理 / ターゲット設定 / 目的定義</p>
+          </div>
+        </li>
+
+        <li class="step reveal" style="--d:120ms">
+          <div class="step__body">
+            <h3 class="step__title">デザイン</h3>
+            <p class="step__desc">情報設計 / ワイヤーフレーム / UIデザイン</p>
+          </div>
+        </li>
+
+        <li class="step reveal" style="--d:240ms">
+          <div class="step__body">
+            <h3 class="step__title">実装</h3>
+            <p class="step__desc">コーディング / レスポンシブ対応 / インタラクション</p>
+          </div>
+        </li>
+
+        <li class="step reveal" style="--d:360ms">
+          <div class="step__body">
+            <h3 class="step__title">テスト・改善</h3>
+            <p class="step__desc">動作確認 / 改善 / 公開</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--deep" id="contact">
+    <div class="container">
+      <div class="section__head section__head--light">
+        <h2 class="section__title">お問い合わせ</h2>
+      </div>
+
+      <div class="contact">
+        <div class="contact__card reveal" style="--d:0ms">
+          <h3 class="contact__title">Email</h3>
+          <a class="contact__email">25aw0112@jec.ac.jp</a>
+
+          <!-- <div class="contact__social">
+            <a class="chip" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© 2026 KIM JEONGHWAN. All Rights Reserved.</small>
+      <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
